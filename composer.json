@@ -1,0 +1,41 @@
+{
+    "name": "victtech/wechatofficial",
+    "description": "laravel of wechat official",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Richard Yan",
+            "email": "richard_yan@qq.com"
+        }
+    ],
+    "homepage": "https://github.com/victtech/wechatofficial",
+    "keywords": ["Laravel", "WechatOfficial"],
+    "require": {
+        "illuminate/support": "~9",
+        "": ""
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Victtech\\WechatOfficial\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Victtech\\WechatOfficial\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Victtech\\WechatOfficial\\WechatOfficialServiceProvider"
+            ],
+            "aliases": {
+                "WechatOfficial": "Victtech\\WechatOfficial\\Facades\\WechatOfficial"
+            }
+        }
+    }
+}
